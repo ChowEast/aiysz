@@ -30,7 +30,14 @@ body {
   margin-bottom: 40px;
   margin-top: 0px;
 }
-
+/* User register page */
+.register-page {
+  img.captcha {
+    margin-bottom: 0px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+}
 
 /* Sticky footer styles */
 html {
