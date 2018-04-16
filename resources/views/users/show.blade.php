@@ -11,11 +11,11 @@
                 <div class="panel-body">
                     <div class="media">
                         <div align="center">
-                            <img class="thumbnail img-responsive" src="https://ws1.sinaimg.cn/large/b2f934d1ly1fqdjucxiowj21kw1fpqfb.jpg" width="300px" height="300px">
+                            <img class="thumbnail img-responsive" src="{{ $user->avatar }}" width="300px" height="300px">
                         </div>
                         <div class="media-body">
                             <hr>
-                            <h4><strong>个人简介</strong></h4>
+                            <h4><strong>简介</strong></h4>
                             <p>{{ $user->introduction }}</p>
                             <hr>
                             <h4><strong>注册于</strong></h4>
