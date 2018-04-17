@@ -2,6 +2,7 @@
 
 Route::get('/', 'PagesController@root')->name('root');
 Route::resource('users', 'UsersController', ['only' => ['show', 'update', 'edit']]);
+Route::resource('categories', 'CategoriesController', ['only' => ['show']]);
 
 // Authentication Routes...
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
