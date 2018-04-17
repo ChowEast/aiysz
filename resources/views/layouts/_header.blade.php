@@ -12,7 +12,7 @@
 
             <!-- Branding Image -->
             <a class="navbar-brand" href="{{ url('/') }}">
-                <img src="https://ws4.sinaimg.cn/large/b2f934d1gy1fqdjp3mhyoj20tj06i0t5.jpg" alt="Notes logo" width="112" height="28">
+                <img src="https://ws2.sinaimg.cn/large/b2f934d1gy1fqfq9hlpbpj20v606vqpp.jpg" alt="Notes logo" width="112" height="28">
             </a>
         </div>
 
