@@ -19,8 +19,41 @@
 body {
   font-family: Hiragino Sans GB, "Hiragino Sans GB", Helvetica, "Microsoft YaHei", Arial,sans-serif;
 }
-/* 发帖后*/
+/* Topic Index 页面灰色图标 */
+.topics-index-page,.categories-show-page{
+  .topic-list {
+    .nav > li > a {
+      position: relative;
+      display: block;
+      padding: 5px 14px;
+      font-size: 0.9em;
+    }
+    a {
+      color: #444444;
+    }
+    .meta {
+      font-size:0.9em;
+      color: #b3b3b3;
+      a {
+        color: #b3b3b3;
+      }
+    }
+    .badge {
+      background-color: #d8d8d8;
+    }
+    hr {
+      margin-top: 12px;
+      margin-bottom: 12px;
+      border: 0;
+      border-top: 1px solid #dcebf5;
+    }
+  }
+}
+
+/* 发帖后页面排版*/
+
 @import "topic_body";
+
 .topics-show-page {
 
   .panel {
