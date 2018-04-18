@@ -3,6 +3,7 @@
 Route::get('/', 'PagesController@root')->name('root');
 Route::resource('users', 'UsersController', ['only' => ['show', 'update', 'edit']]);
 Route::resource('categories', 'CategoriesController', ['only' => ['show']]);
+Route::post('upload_image', 'TopicsController@uploadImage')->name('topics.upload_image');
 
 // Authentication Routes...
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
