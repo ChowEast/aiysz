@@ -17212,6 +17212,22 @@ body {
   line-height: 38px;
 }
 
+/*回复*/
+
+.topic-reply hr {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.topic-reply a {
+  color: inherit;
+}
+
+.topic-reply .meta {
+  font-size: .9em;
+  color: #ec6e38;
+}
+
 /* header */
 
 .navbar-static-top {
@@ -17264,6 +17280,15 @@ body {
 
 .users-show-page .pagination {
   margin: 12px 0;
+}
+
+.meta {
+  font-size: .9em;
+  color: #b3b3b3;
+}
+
+.reply-content {
+  margin: 6px 0;
 }
 
 /* Sticky footer styles */

@@ -1,7 +1,7 @@
 <?php
 
 use Faker\Generator as Faker;
-
+//cs
 $factory->define(App\Models\Topic::class, function (Faker $faker) {
 
     $sentence = $faker->sentence();

@@ -6,6 +6,12 @@ class Topic extends Model
 {
     protected $fillable = ['title', 'body', 'category_id', 'excerpt', 'slug'];
 
+    //关联 Topic 和 User 模型，新增对 Reply 的所属关系。一篇帖子下有多条回复
+    public function replies()
+    {
+        return $this->hasMany(Reply::class);
+    }
+
     public function category()
     {
         return $this->belongsTo(Category::class);
@@ -43,5 +49,10 @@ class Topic extends Model
     {
         // 按照创建时间排序
         return $query->orderBy('created_at', 'desc');
+    }
+
+    public function link($params = [])
+    {
+        return route('topics.show', array_merge([$this->id, $this->slug], $params));
     }
 }

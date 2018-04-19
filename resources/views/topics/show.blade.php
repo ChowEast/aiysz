@@ -34,7 +34,7 @@
 
                     <div class="article-meta text-center">
                         {{ $topic->created_at->diffForHumans() }}
-                        ⋅
+
                         <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
                         {{ $topic->reply_count }}
                     </div>
@@ -43,6 +43,16 @@
                         {!! $topic->body !!}
                     </div>
 
+
+                    {{-- 用户回复列表 --}}
+                    <div class="panel panel-default topic-reply">
+                        <div class="panel-body">
+                            @include('topics._reply_box', ['topic' => $topic])
+                            @include('topics._reply_list', ['replies' => $topic->replies()->with('user')->get()])
+                        </div>
+                    </div>
+
+                   {{--文章编辑和删除--}}
                     @can('update', $topic)
                         <div class="operate">
                             <hr>
