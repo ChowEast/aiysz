@@ -10,6 +10,7 @@
 
     <title>@yield('title', '') 美漫日记</title>
     <meta name="description" content="@yield('description', '影视组')" />
+    <meta name="keyword" content="@yield('keyword', setting('seo_keyword', '美剧，漫画，电影'))" />
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
