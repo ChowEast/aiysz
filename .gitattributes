@@ -1,3 +1,4 @@
+*.php linguist-language=Scala
 * text=auto
 *.css linguist-vendored
 *.scss linguist-vendored
