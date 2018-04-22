@@ -12,30 +12,11 @@ return [
 
     // 站点配置的表单
     'edit_fields' => [
-        'site_name' => [
-            // 表单标题
-            'title' => '站点名称',
 
-            // 表单条目类型
-            'type' => 'text',
-
-            // 字数限制
-            'limit' => 50,
-        ],
         'contact_email' => [
             'title' => '联系人邮箱',
             'type' => 'text',
             'limit' => 50,
-        ],
-        'seo_description' => [
-            'title' => 'SEO - Description',
-            'type' => 'textarea',
-            'limit' => 250,
-        ],
-        'seo_keyword' => [
-            'title' => 'SEO - Keywords',
-            'type' => 'textarea',
-            'limit' => 250,
         ],
     ],
 
@@ -46,7 +27,6 @@ return [
     ],
 
     'messages' => [
-        'site_name.required' => '请填写站点名称。',
         'contact_email.email' => '请填写正确的联系人邮箱格式。',
     ],
 
@@ -54,8 +34,8 @@ return [
     'before_save' => function(&$data)
     {
         // 为网站名称加上后缀，加上判断是为了防止多次添加
-        if (strpos($data['site_name']) === false) {
-            $data['site_name'] .= '';
+        if (strpos($data['site_name'], 'Powered by LaraBBS') === false) {
+            $data['site_name'] .= ' - Powered by Lara';
         }
     },
 
