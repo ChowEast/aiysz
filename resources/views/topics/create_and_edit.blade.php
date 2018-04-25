@@ -33,7 +33,6 @@
                                         <input class="form-control" type="text" name="title" value="{{ old('title', $topic->title ) }}" placeholder="请填写标题" required/>
                                     </div>
 
-                                    {{--分类选择逻辑判断，第二个是哪个分类被选中的判断，遍历时只要与话题关联的 category_id 一致的话，即可视为选中--}}
                                     <div class="form-group">
                                         <select class="form-control" name="category_id" required>
                                             <option value="" hidden disabled {{ $topic->id ? '' : 'selected' }}>请选择分类</option>
@@ -56,13 +55,13 @@
         </div>
     </div>
 
-    @endsection
+@endsection
 
-    @section('styles')
+@section('styles')
     <link rel="stylesheet" type="text/css" href="{{ asset('css/simditor.css') }}">
-    @stop
+@stop
 
-    @section('scripts')
+@section('scripts')
     <script type="text/javascript"  src="{{ asset('js/module.js') }}"></script>
     <script type="text/javascript"  src="{{ asset('js/hotkeys.js') }}"></script>
     <script type="text/javascript"  src="{{ asset('js/uploader.js') }}"></script>
@@ -84,4 +83,4 @@
         });
     </script>
 
-    @stop
+@stop
