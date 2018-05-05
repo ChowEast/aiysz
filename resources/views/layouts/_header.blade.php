@@ -12,7 +12,7 @@
 
             <!-- Branding Image -->
             <a class="navbar-brand" href="{{ url('/') }}">
-                <img src="https://ws2.sinaimg.cn/large/b2f934d1gy1fqfq9hlpbpj20v606vqpp.jpg" alt="Notes logo" width="112" height="28">
+                <img src="https://bock.oss-cn-beijing.aliyuncs.com/cc2.png" alt="Notes logo" width="112" height="30">
             </a>
         </div>
 
@@ -24,7 +24,7 @@
                     <li class="{{ active_class((if_route('categories.show') && if_route_param('category', 1))) }}"><a href="{{ route('categories.show', 1) }}">分享</a></li>
                     <li class="{{ active_class((if_route('categories.show') && if_route_param('category', 2))) }}"><a href="{{ route('categories.show', 2) }}">问答</a></li>
                     <li class="{{ active_class((if_route('categories.show') && if_route_param('category', 3))) }}"><a href="{{ route('categories.show', 3) }}">公告</a></li>
-                    <li class="{{ active_class((if_route('categories.show') && if_route_param('category', 3))) }}"><a href="{{ route('categories.show', 4) }}">4K专区</a></li>
+                    <li class="{{ active_class((if_route('categories.show') && if_route_param('category', 4))) }}"><a href="{{ route('categories.show', 4) }}">4K专区</a></li>
                 </ul>
 
             </ul>
@@ -58,7 +58,7 @@
 
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                        <span class="user-avatar pull-left" style="margin-right:8px; margin-top:-5px;">
+                        <span class="user-avatar pull-left" style="margin-right:8px; margin-top:0px;">
                         <img src="{{ Auth::user()->avatar }}" class="img-responsive img-circle" width="30px" height="40px">
                         </span>
                             {{ Auth::user()->name }}

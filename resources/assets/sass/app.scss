@@ -94,97 +94,107 @@ body {
 .navbar-static-top {
   border-color: #e7e7e7;
   background-color: #fff;
-  box-shadow: 0px 1px 11px 2px rgba(42, 42, 42, 0.1);
-
-  background-image:linear-gradient(90deg,#ffc029,#4cd8b0);
+  box-shadow: 10px 1px 11px 2px rgba(42, 42, 42, 0.1);
+  //background:url("https://bock.oss-cn-beijing.aliyuncs.com/top-bar.png") top;
+  //height:3px;width:100%;
+  border-top: 4px solid #ffc029;
+  //background-image:linear-gradient(90deg,#ffc029,);
   margin-bottom: 40px;
   margin-top: 0px;
 }
 
-.dropdown-menu {
-  padding: 0px;
+/*.navbar-static-top {
+  border-color: #e7e7e7;
+  background-color: #fff;
+  box-shadow: 0px 1px 11px 2px rgba(42, 42, 42, 0.1);
+  border-top: 4px solid #00b5ad;
+  margin-bottom: 40px;
+  margin-top: 0px;
+}*/
+  .dropdown-menu {
+    padding: 0px;icon
 
-  li a {
-    border-bottom: 1px solid #d8d8d8;
-    line-height: 2.4;
+    li a {
+      border-bottom: 1px solid #d8d8d8;
+      line-height: 2.4;
 
-    .glyphicon {
-      margin-right: 8px;
-    }
-  }
-}
-/* User register page */
-.users-show-page {
-  .user-info {
-    .thumbnail {
-      margin-bottom: 0px;
-    }
-  }
-
-  .nav-tabs {
-    margin-bottom: 20px;
-
-    >li.active > a {
-      background-color: #fff;
-    }
-  }
-
-  .list-group {
-    .list-group-item {
-      border: none;
-      margin-bottom: 0px;
-      border-bottom: 1px solid #efefef;
-
-      .meta {
-        color: #b3b3b3;
+      .glyphicon {
+        margin-right: 8px;
       }
     }
   }
+  /* User register page */
+  .users-show-page {
+    .user-info {
+      .thumbnail {
+        margin-bottom: 0px;
+      }
+    }
 
-  .pagination {
-    margin: 12px 0;
+    .nav-tabs {
+      margin-bottom: 20px;
+
+      >li.active > a {
+        background-color: #fff;
+      }
+    }
+
+    .list-group {
+      .list-group-item {
+        border: none;
+        margin-bottom: 0px;
+        border-bottom: 1px solid #efefef;
+
+        .meta {
+          color: #b3b3b3;
+        }
+      }
+    }
+
+    .pagination {
+      margin: 12px 0;
+    }
   }
-}
   .meta {
-  font-size: .9em;
-  color: #b3b3b3;
+    font-size: .9em;
+    color: #b3b3b3;
   }
   .reply-content {
-  margin: 6px 0;
+    margin: 6px 0;
   }
 
 
-/* Sticky footer styles */
-html {
-  position: relative;
-  min-height: 100% ;
-}
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
+  /* Sticky footer styles */
+  html {
+    position: relative;
+    min-height: 100% ;
+  }
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+  }
 
   .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100% ;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: #000;
+    position: absolute;
+    bottom: 0;
+    width: 100% ;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #000;
 
 
 
-  .container {
-    padding-right: 15px;
-    padding-left: 15px;
+    .container {
+      padding-right: 15px;
+      padding-left: 15px;
 
-    p {
-      margin: 19px 0;
-      color: #c1c1c1;
+      p {
+        margin: 19px 0;
+        color: #c1c1c1;
 
-      a {
-        color: inherit;
+        a {
+          color: inherit;
+        }
       }
     }
   }
-}
