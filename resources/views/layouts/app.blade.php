@@ -7,7 +7,7 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="shortcut icon" href="https://bock.oss-cn-beijing.aliyuncs.com/icon.png"/>
+    <link rel="shortcut icon" href="https://bock.oss-cn-beijing.aliyuncs.com/title2.png"/>
 
     <title>@yield('title', '') |美漫日记</title>
     <meta name="description" content="@yield('description', '美漫日记')" />
