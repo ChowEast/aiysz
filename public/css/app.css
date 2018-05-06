@@ -8356,6 +8356,12 @@ body {
   font-family: Hiragino Sans GB, "Hiragino Sans GB", Helvetica, "Microsoft YaHei", Arial,sans-serif;
 }
 
+.navbar-nav > li > a {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  line-height: 32px;
+}
+
 /* header */
 
 .navbar-static-top {
@@ -8461,7 +8467,7 @@ body {
   margin: 6px 0;
 }
 
-/* Topic 页面灰色图标 */
+/* Topic 页面图标 */
 
 .topics-index-page .topic-list .nav > li > a,
 .categories-show-page .topic-list .nav > li > a,
@@ -8482,13 +8488,13 @@ body {
 .categories-show-page .topic-list .meta,
 .root-page .topic-list .meta {
   font-size: 0.9em;
-  color: #b3b3b3;
+  color: rgba(0, 0, 0, 0.93);
 }
 
 .topics-index-page .topic-list .meta a,
 .categories-show-page .topic-list .meta a,
 .root-page .topic-list .meta a {
-  color: #b3b3b3;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .topics-index-page .topic-list .badge,

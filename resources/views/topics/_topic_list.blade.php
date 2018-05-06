@@ -11,24 +11,26 @@
 
                 <div class="media-body">
 
+
                     <div class="media-heading">
                         <a href="{{ $topic->link() }}" title="{{ $topic->title }}">
                            {{ $topic->title }}
                         </a>
+
                         <a class="pull-right" href="{{ route('topics.show', [$topic->id]) }}" >
-                            <span class="badge"> {{ $topic->reply_count }} </span>
+                            <span class="glyphicon glyphicon-tags" aria-hidden="true"></span> <span class="label label-info">{{ $topic->category->name }}</span>  <span class="badge"> {{ $topic->reply_count }} </span>
                         </a>
                     </div>
 
                     <div class="media-body meta">
-                        <a href="{{ route('categories.show', $topic->category->id) }}" title="{{ $topic->category->name }}">
-                            <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>
-                            {{ $topic->category->name }}
-                        </a>
+                        {{--<a href="{{ route('categories.show', $topic->category->id) }}" title="{{ $topic->category->name }}">--}}
+                            {{--<span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>--}}
+                            {{--{{ $topic->category->name }}--}}
+                        {{--</a>--}}
 
-                        <span> • </span>
+                        {{--<span> • </span>--}}
                         <a href="{{ route('users.show', [$topic->user_id]) }}" title="{{ $topic->user->name }}">
-                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
                             {{ $topic->user->name }}
                         </a>
                         <span> • </span>

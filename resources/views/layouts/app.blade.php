@@ -9,7 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="shortcut icon" href="https://bock.oss-cn-beijing.aliyuncs.com/title2.png"/>
 
-    <title>@yield('title', '') |美漫日记</title>
+    <title>@yield('title', '')｜美漫日记</title>
     <meta name="description" content="@yield('description', '美漫日记')" />
     <meta name="keyword" content="@yield('keyword', setting('seo_keyword', '美剧，漫画，电影'))" />
 

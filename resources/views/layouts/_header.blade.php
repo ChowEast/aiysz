@@ -12,7 +12,7 @@
 
             <!-- Branding Image -->
             <a class="navbar-brand" href="{{ url('/') }}">
-                <img src="https://bock.oss-cn-beijing.aliyuncs.com/cc2.png" alt="logo" width="112" height="30">
+                <img src="https://bock.oss-cn-beijing.aliyuncs.com/cc2.png" alt=" logo" width="112" height="30">
             </a>
         </div>
 
@@ -40,15 +40,15 @@
                     <!--导航添加＋-->
                     <li>
                         <a href="{{ route('topics.create') }}">
-                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
                         </a>
                     </li>
 
 
                         {{-- 消息通知标记 --}}
                     <li>
-                        <a href="{{ route('notifications.index') }}" class="notifications-badge" style="margin-top: -2px;">
-                        <span class="badge badge-{{ Auth::user()->notification_count > 0 ? 'hint' : 'fade' }} " title="消息提醒">
+                        <a href="{{ route('notifications.index') }}" class="notifications-badge" style="margin-top: 0px;">
+                            <span class="glyphicon glyphicon-bell" aria-hidden="true"></span> <span class="badge badge-{{ Auth::user()->notification_count > 0 ? 'hint' : 'fade' }} " title="消息提醒">
                                 {{ Auth::user()->notification_count }}
                         </span>
                         </a>
