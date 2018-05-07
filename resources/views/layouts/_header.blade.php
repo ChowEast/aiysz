@@ -34,8 +34,15 @@
             <ul class="nav navbar-nav navbar-right">
                 <!-- Authentication Links -->
                 @guest
-                <li><a href="{{ route('login') }}">登录</a></li>
-                <li><a href="{{ route('register') }}">注册</a></li>
+                <li><a href="{{ route('login') }}">
+                        <span style="color: #2771e2">
+                                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                                </span><span>登录</span></a></li>
+
+                <li><a href="{{ route('register') }}">
+                        <span style="color: #694b90">
+                   <span class="glyphicon glyphicon-registration-mark" aria-hidden="true"></span>
+                        </span><span>注册</span></a></li>
                 @else
                     <!--导航添加＋-->
                     <li>

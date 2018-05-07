@@ -8405,7 +8405,7 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #000;
+  background-color: #000000;
 }
 
 .footer .container {
@@ -8415,7 +8415,7 @@ body {
 
 .footer .container p {
   margin: 19px 0;
-  color: #c1c1c1;
+  color: #fffbfd;
 }
 
 .footer .container p a {
