@@ -1,4 +1,5 @@
 <nav class="navbar navbar-default navbar-static-top">
+    <div class="navbar-or">
     <div class="container">
         <div class="navbar-header">
 
@@ -111,11 +112,15 @@
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                     {{ csrf_field() }}
                                 </form>
+
                             </li>
                         </ul>
                     </li>
+
+
                     @endguest
             </ul>
         </div>
+    </div>
     </div>
 </nav>

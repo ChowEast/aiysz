@@ -15,8 +15,28 @@ body {
   padding-bottom: 14px;
   line-height: 32px;
 }
+.navbar-or {
+  background:url("https://bock.oss-cn-beijing.aliyuncs.com/top-bar.png") top;
+  height:3px;width:100%;
+  
+  top: 0;
+  left: 0;
+  z-index: 9;
 
-
+  //background-color: #ffc029;
+  //background-image: linear-gradient(90deg,#ffc029,#4cd8b0);
+  //content: "";
+  //display: block;
+  //height: 6px;
+  //height: .375rem;
+  //left: 0;
+  //margin: 0;
+  //
+  //right: 0;
+  //top: 0;
+  //width: 100%;
+  //z-index: 99;
+}
 /* header */
 
 .navbar-static-top {
@@ -25,8 +45,14 @@ body {
   box-shadow: 10px 1px 11px 2px rgba(42, 42, 42, 0.1);
   //background:url("https://bock.oss-cn-beijing.aliyuncs.com/top-bar.png") top;
   //height:3px;width:100%;
-  border-top: 4px solid #ffc029;
+  //border-top: 3px solid #ffc029;
+  //border-top: 4px solid #4cd8b0;
+
   //background-image:linear-gradient(90deg,#ffc029,);
+  //background-color: #4cd8b0;
+  //background-image: linear-gradient(90deg,#ffc029,#4cd8b0);
+
+
   margin-bottom: 40px;
   margin-top: 0px;
 
@@ -68,7 +94,7 @@ body {
 
     p {
       margin: 19px 0;
-      color: #fffbfd;
+      color: #9b9799;
 
       a {
         color: inherit;
