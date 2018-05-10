@@ -1,5 +1,5 @@
-<nav class="navbar navbar-default navbar-static-top">
-    <div class="navbar-or">
+<nav class="navbar navbar-default navbar-static-top ">
+
     <div class="container">
         <div class="navbar-header">
 
@@ -13,23 +13,20 @@
 
             <!-- Branding Image -->
             <a class="navbar-brand" href="{{ url('/') }}">
-                <img src="https://bock.oss-cn-beijing.aliyuncs.com/cc2.png" alt=" logo" width="112" height="30">
+                <img src="https://bock.oss-cn-beijing.aliyuncs.com/uploads/aiysz5.jpg" alt=" logo" width="112" height="30">
             </a>
         </div>
 
-        <div class="collapse navbar-collapse" id="app-navbar-collapse">
+       <div class="collapse navbar-collapse" id="app-navbar-collapse">
+
             <!-- 导航 -->
             <ul class="nav navbar-nav">
-                <ul class="nav navbar-nav">
-                    {{--<li class="{{ active_class(if_route('topics.index')) }}"><a href="{{ route('topics.index') }}">话题</a></li>--}}
+                    <li class="{{ active_class(if_route('topics.index')) }}"><a href="{{ route('topics.index') }}">话题</a></li>
                     <li class="{{ active_class((if_route('categories.show') && if_route_param('category', 1))) }}"><a href="{{ route('categories.show', 1) }}">分享</a></li>
                     <li class="{{ active_class((if_route('categories.show') && if_route_param('category', 2))) }}"><a href="{{ route('categories.show', 2) }}">问答</a></li>
                     <li class="{{ active_class((if_route('categories.show') && if_route_param('category', 3))) }}"><a href="{{ route('categories.show', 3) }}">公告</a></li>
                     <li class="{{ active_class((if_route('categories.show') && if_route_param('category', 4))) }}"><a href="{{ route('categories.show', 4) }}">4K专区</a></li>
                 </ul>
-
-            </ul>
-
 
             <!-- Right Side Of Navbar -->
             <ul class="nav navbar-nav navbar-right">
@@ -121,6 +118,5 @@
                     @endguest
             </ul>
         </div>
-    </div>
     </div>
 </nav>

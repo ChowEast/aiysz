@@ -21,7 +21,6 @@
 
 
             <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                <label for="password" class="col-md-4 control-label">账 号</label>
                 <div class="col-md-6">
                     <input id="email" type="text"  value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"class="form-control" name="email" value="{{ old('email') }}" required autofocus>
 
@@ -34,8 +33,6 @@
             </div>
 
             <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-
-                <label for="password" class="col-md-4 control-label">密 码</label>
                 <div class="col-md-6">
 
                     <input id="password" type="password" value="password" class="form-control" name="password" requi redvalue="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'password';}">
@@ -53,7 +50,7 @@
 
 
             </div>
-    </div>
+</div>
     <div class="login-bottom">
         <h3>没有账号？ &nbsp;<a href="{{ route('register') }}"> <span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a>
     </div>
@@ -62,4 +59,5 @@
 
 </body>
 </html>
+
 @endsection
