@@ -6,7 +6,15 @@
     </div>
 </div>
 
-
+<div class="panel panel-default corner-radius">
+    <div class="panel-heading text-center">
+        <h3 class="panel-title">公告</h3>
+    </div>
+    <div class="panel-heading text-center">
+    <h5>美漫大家庭－影视组&nbsp;<span style="color: #000000;font-size: 15px;"><span class="glyphicon glyphicon-sound-dolby" aria-hidden="true"></span></span>
+    </h5>
+</div>
+</div>
 
 
 <div class="panel panel-default corner-radius">
@@ -34,3 +42,4 @@
         </a>
     </div>
 </div>
+

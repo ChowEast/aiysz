@@ -8,7 +8,7 @@
 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
-    <script src="js/scripts.js"></script>
+    {{--<script src="js/scripts.js"></script>--}}
 </head>
 <div>
 

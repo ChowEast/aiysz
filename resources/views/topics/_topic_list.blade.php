@@ -5,7 +5,7 @@
             <li class="media">
                 <div class="media-left">
                     <a href="{{ route('users.show', [$topic->user_id]) }}">
-                        <img class="media-object img-rounded" style="width: 42px; height: 42px;" src="{{ $topic->user->avatar }}" title="{{ $topic->user->name }}">
+                        <img class="media-object img-circle" style="width: 42px; height: 42px;" src="{{ $topic->user->avatar }}" title="{{ $topic->user->name }}">
                     </a>
                 </div>
 
@@ -33,7 +33,7 @@
                             <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
                             {{ $topic->user->name }}
                         </a>
-                        <span> • </span>
+                        <span>&nbsp;</span>
                         <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
                         <span class="timeago" title="最后活跃于">{{ $topic->updated_at->diffForHumans() }}</span>
                     </div>

@@ -17,10 +17,7 @@ class SeedCategoriesData extends Migration
                 'name'        => '问答',
                 'description' => '求片区，互帮互助😈',
             ],
-            [
-                'name'        => '公告',
-                'description' => '站点公告💡',
-            ],
+
             [
                 'name'        => '4K专区',
                 'description' => '好清晰的😍',

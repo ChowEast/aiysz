@@ -24,8 +24,7 @@
                     <li class="{{ active_class(if_route('topics.index')) }}"><a href="{{ route('topics.index') }}">话题</a></li>
                     <li class="{{ active_class((if_route('categories.show') && if_route_param('category', 1))) }}"><a href="{{ route('categories.show', 1) }}">分享</a></li>
                     <li class="{{ active_class((if_route('categories.show') && if_route_param('category', 2))) }}"><a href="{{ route('categories.show', 2) }}">问答</a></li>
-                    <li class="{{ active_class((if_route('categories.show') && if_route_param('category', 3))) }}"><a href="{{ route('categories.show', 3) }}">公告</a></li>
-                    <li class="{{ active_class((if_route('categories.show') && if_route_param('category', 4))) }}"><a href="{{ route('categories.show', 4) }}">4K专区</a></li>
+                    <li class="{{ active_class((if_route('categories.show') && if_route_param('category', 3))) }}"><a href="{{ route('categories.show', 3) }}">4K专区</a></li>
                 </ul>
 
             <!-- Right Side Of Navbar -->
@@ -33,14 +32,14 @@
                 <!-- Authentication Links -->
                 @guest
                 <li><a href="{{ route('login') }}">
-                        <span style="color: #2771e2">
+                        <button type="button" class="btn btn-default"><span style="color: #2771e2">
                                 <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-                                </span><span>登录</span></a></li>
+                                </span><span>登录</span></button></a></li>
 
                 <li><a href="{{ route('register') }}">
-                        <span style="color: #694b90">
+                        <button type="button" class="btn btn-default"><span style="color: #694b90">
                    <span class="glyphicon glyphicon-registration-mark" aria-hidden="true"></span>
-                        </span><span>注册</span></a></li>
+                            </span><span>注册</span></button></a></li>
                 @else
                     <!--导航添加＋-->
                     <li>
