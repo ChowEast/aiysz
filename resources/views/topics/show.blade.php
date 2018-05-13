@@ -42,7 +42,6 @@
                     <div class="topic-body">
                         {!! $topic->body !!}
                     </div>
-
                    {{--文章编辑和删除--}}
                     @can('update', $topic)
                         <div class="operate">

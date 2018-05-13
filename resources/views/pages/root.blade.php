@@ -4,7 +4,7 @@
 @section('content')
 
 
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    {{--<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">--}}
 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
@@ -15,7 +15,7 @@
 <section class="hero">
     <div class="row hero-content">
         <div class="col-md-12 text-center">
-            <h1 class="animated fadeInDown">MARAVEL STUD10S</h1><a href="{{ route('topics.index') }}" class="read-btn animated fadeInUp">进入社区</a>
+            <h1 class="animated fadeInDown">MARVEL STUD10S</h1><a href="{{ route('topics.index') }}" class="read-btn animated fadeInUp">进入社区</a>
         </div>
     </div>
 </section>

@@ -43,3 +43,16 @@
     </div>
 </div>
 
+<div class="panel panel-default corner-radius">
+    <div class="panel-heading text-center">
+        <h3 class="panel-title">智能在线图片压缩</h3>
+    </div>
+    <div class="panel-body text-center" style="padding-top: 5px;">
+        <a href="https://goimg.io" target="_blank" rel="nofollow" title="" style="padding: 3px;line-height: 40px;">
+            <img src="https://bock.oss-cn-beijing.aliyuncs.com/uploads/logo1.jpg" style="width:170px; margin: 3px 0;">
+        </a>
+        <a href="https://www.mcafeesecure.com" target="_blank" rel="nofollow" title="" style="padding: 3px;line-height: 40px;">
+            <img src="https://bock.oss-cn-beijing.aliyuncs.com/uploads/mcafee_secure.jpg" style="width:40px; margin: 3px 0;">
+        </a>
+</div>
+</div>
