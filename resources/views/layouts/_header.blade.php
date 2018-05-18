@@ -52,7 +52,7 @@
                         {{-- 消息通知标记 --}}
                     <li>
                         <a href="{{ route('notifications.index') }}" class="notifications-badge" style="margin-top: 0px;">
-                            <span class="glyphicon glyphicon-bell" aria-hidden="true"></span> <span class="badge badge-{{ Auth::user()->notification_count > 0 ? 'hint' : 'fade' }} " title="消息提醒">
+                            <span class="glyphicon glyphicon-bell" aria-hidden="true"></span> <span class="badge badge-{{ Auth::user()->notification_count > 0 ? 'hint' : 'fade' }} " title="消息提醒 " style="margin-top: -5px;">
                                 {{ Auth::user()->notification_count }}
                         </span>
                         </a>
@@ -62,10 +62,10 @@
 
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                        <span class="user-avatar pull-left" style="margin-right:8px; margin-top:0px;">
-                        <img src="{{ Auth::user()->avatar }}" class="img-responsive img-circle" width="30px" height="40px">
+                        <span class="user-avatar pull-left" style="margin-right:8px; margin-top:-2px;">
+                        <img src="{{ Auth::user()->avatar }}" class="img-responsive img-circle" style=" width: 36px; height: 36px; box-shadow: rgb(255, 255, 255) 0px 0px 0px 1px, rgb(0, 0, 0) 0px 0px 1px 1px;">
                         </span>
-                            {{ Auth::user()->name }}
+                            {{--{{ Auth::user()->name }}--}}
                             <span class="caret"></span>
                         </a>
 

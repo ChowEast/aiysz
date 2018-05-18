@@ -17,7 +17,7 @@
                     <div class="media">
                         <div align="center">
                             <a href="{{ route('users.show', $topic->user->id) }}">
-                                <img class="img-circle" src="{{ $topic->user->avatar }}" width="200px" height="200px">
+                                <img class="media-object img-thumbnail" src="{{ $topic->user->avatar }}" style="width: 200px; height: 200px;border-radius:50%;background-color:#FFFFFF;">
                             </a>
                         </div>
                     </div>

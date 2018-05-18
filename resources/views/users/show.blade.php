@@ -11,7 +11,7 @@
                 <div class="panel-body">
                     <div class="media">
                         <div align="center">
-                            <img class="img-circle" src="{{ $user->avatar }}" width="200px" height="200px">
+                            <img class="media-object img-thumbnail" src="{{ $user->avatar }}" style="width: 200px; height: 200px;border-radius:50%;background-color:#FFFFFF;">
                         </div>
                         <div class="media-body">
                             <hr>
